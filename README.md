@@ -1,6 +1,4 @@
-Exploring cutting-edge models: LLMs, SLMs, local development and more
-
-![Title](./images/explorecuttingedge.png)
+## Exploring cutting-edge models: LLMs, SLMs, local development and more
 
 ## Session Desciption
 Today, there are many Generative AI models to choose from: Large Language Models (LLMs), Small Language Models (SLMs), proprietary models, open models, models in the cloud, models on devices, text models, code models, image models, and multimodal models. In this session, we'll provide guidance to help you choose the right model to fit your needs, and tools you can use to evaluate and compare models for your specific tasks.
