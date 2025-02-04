@@ -14,7 +14,7 @@ There are many Generative AI models: LLMs, SLMs, proprietary, open, cloud-based,
 | Resources          | Links                            | Description |
 |-------------------|----------------------------------|-------------------|
 | Global AI PowerPoint | [Presentation](https://globalaibootcamp25.blob.core.windows.net/sessions/globalaibootcamp-cutting-edge-models.pptx) | Global AI themed slides |
-| PowerPoint        | [Presentation]([https://aka.ms/AArvvsq](https://aka.ms/AArxlic)) | Slides |
+| PowerPoint        | [Presentation]([https://aka.ms/AArvvsq](https://aka.ms/AArxlic) | Slides |
 
 ## Learning Outcomes
  
