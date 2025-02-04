@@ -172,41 +172,4 @@ Fine tuning workshop for [AI Foundry and Microsoft Olive](https://aka.ms/ignite/
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Low Ranking Adaptation (LoRA): LoRA is a technique to fine tune large language models. It uses low-rank approximation methods to reduce the computational and financial costs of adapting models with billions of parameters, such as GPT-3, to specific tasks or domains.                                                                                       | DeepSpeed:  is a deep learning software library that accelerates the training of large language models. It includes ZeRO (Zero Redundancy Optimizer), a memory-efficient approach for distributed training. DeepSpeed can automatically optimize fine-tuning jobs that use Hugging Face’s Trainer API, and offers a drop-in replacement script to run existing fine-tuning scripts.                                                                              |
 | Quantized LoRA (QLoRA): QLoRA is an efficient finetuning approach for large language models (LLMs) that significantly reduces memory usage while maintaining the performance of full 16-bit finetuning. It achieves this by backpropagating gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters.                        | ZeRO: ZeRO is a set of memory optimization techniques that enable effective training of large models with trillions of parameters, such as GPT-2 and Turing-NLG 17B. A key appeal of ZeRO is that no model code modifications are required. It’s a memory-efficient form of data parallelism that gives you access to the aggregate GPU memory of all the GPU devices available to you, without inefficiency caused by the data replication in data parallelism. |
-| Parameter Efficient Fine Tuning (PEFT): PEFT is an NLP technique that adapts pre-trained language models adjusting key parameters for specific tasks, and delivers comparable performance to full fine-tuning across modalities like image classification and stable diffusion. It's a valuable approach for high performance with minimal trainable parameters. | DORA: Weight-Decomposed Low-Rank Adaptation (DoRA). DoRA initially decomposes the pre-trained weight into its magnitude and directional components and finetunes both of them. Because the directional component is large in terms of parameter numbers, we further decompose it with LoRA for efficient finetuning.                                                                                                                                             |
-## Content Owners
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-
-<table>
-<tr>
-    <td align="center"><a href="http://learnanalytics.microsoft.com">
-        <img src="https://avatars.githubusercontent.com/u/2511341?v=4" width="100px;" alt="Lee Stott
-"/><br />
-        <sub><b>Lee Stott
-</b></sub></a><br />
-            <a href="https://github.com/leestott" title="talk">📢</a> 
-    </td>
-   <td align="center"><a href="http://learnanalytics.microsoft.com">
-        <img src="https://avatars.githubusercontent.com/u/93169410?v=4" width="100px;" alt="Kinfey Lo"
-"/><br />
-        <sub><b>Kinfey Lo
-</b></sub></a><br />
-            <a href="https://github.com/kinfey" title="talk">📢</a> 
-    </td>
-     
-</tr></table>
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-## Responsible AI 
-
-Microsoft is committed to helping our customers use our AI products responsibly, sharing our learnings, and building trust-based partnerships through tools like Transparency Notes and Impact Assessments. Many of these resources can be found at [https://aka.ms/RAI](https://aka.ms/RAI).
-Microsoft’s approach to responsible AI is grounded in our AI principles of fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.
-
-Large-scale natural language, image, and speech models - like the ones used in this sample - can potentially behave in ways that are unfair, unreliable, or offensive, in turn causing harms. Please consult the [Azure OpenAI service Transparency note](https://learn.microsoft.com/legal/cognitive-services/openai/transparency-note?tabs=text) to be informed about risks and limitations.
-
-The recommended approach to mitigating these risks is to include a safety system in your architecture that can detect and prevent harmful behavior. [Azure AI Content Safety](https://learn.microsoft.com/azure/ai-services/content-safety/overview) provides an independent layer of protection, able to detect harmful user-generated and AI-generated content in applications and services. Azure AI Content Safety includes text and image APIs that allow you to detect material that is harmful. Within Azure AI Foundry, the Content Safety service allows you to view, explore and try out sample code for detecting harmful content across different modalities. The following [quickstart documentation](https://learn.microsoft.com/azure/ai-services/content-safety/quickstart-text?tabs=visual-studio%2Clinux&pivots=programming-language-rest) guides you through making requests to the service.
-
-Another aspect to take into account is the overall application performance. With multi-modal and multi-models applications, we consider performance to mean that the system performs as you and your users expect, including not generating harmful outputs. It's important to assess the performance of your overall application using [Performance and Quality and Risk and Safety evaluators](https://learn.microsoft.com/azure/ai-studio/concepts/evaluation-metrics-built-in). You also have the ability to create and evaluate with [custom evaluators](https://learn.microsoft.com/azure/ai-studio/how-to/develop/evaluate-sdk#custom-evaluators).
-
-You can evaluate your AI application in your development environment using the [Azure AI Evaluation SDK](https://microsoft.github.io/promptflow/index.html). Given either a test dataset or a target, your generative AI application generations are quantitatively measured with built-in evaluators or custom evaluators of your choice. To get started with the azure ai evaluation sdk to evaluate your system, you can follow the [quickstart guide](https://learn.microsoft.com/azure/ai-studio/how-to/develop/flow-evaluate-sdk). Once you execute an evaluation run, you can [visualize the results in Azure AI Foundry](https://learn.microsoft.com/azure/ai-studio/how-to/evaluate-flow-results).
+| Parameter Efficient Fine Tuning (PEFT): PEFT is an NLP technique that adapts pre-trained language models adjusting key parameters for specific tasks, and delivers comparable performance to full fine-tuning across modalities like image classification and stable diffusion. It's a valuable approach for high performance with minimal trainable parameters. | DORA: Weight-Decomposed Low-Rank Adaptation (DoRA). DoRA initially decomposes the pre-trained weight into its magnitude and directional components and finetunes both of them. Because the directional component is large in terms of parameter numbers, we further decompose it with LoRA for efficient finetuning.                                                                                                                                             
